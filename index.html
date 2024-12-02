@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MindSpring</title>
+
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for social media icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+F
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .poppins {
+            font-family: "Poppins", serif;
+        }
+    </style>
+
+
+</head>
+
+<body class="poppins">
+    <header class="">
+        <nav class="bg-[#232536] py-6">
+            <div class="max-w-7xl mx-auto flex justify-between items-center">
+                <div class="navbar-start">
+                    <a class="text-xl font-extrabold text-white">MindSpring</a>
+                </div>
+                <div class="">
+                    <ul class="flex gap-5 text-white font-light">
+                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Home</a></li>
+                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Story</a></li>
+                        <li><a href="" class="hover:font-medium hover:text-blue-400">Problem & Solution</a></li>
+                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Products</a></li>
+                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Research</a></li>
+                        <li><a href="" class="hover:font-semibold hover:text-blue-400">About Us</a></li>
+                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <hr class="text-white">
+
+        <!-- Banner Section -->
+        <section class="relative">
+            <!-- Video Background -->
+            <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay muted loop>
+                <source src="assets/videos/banner-background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <!-- Dark Overlay -->
+            <div class="absolute inset-0 bg-black opacity-10 z-10"></div>
+
+            <!-- Content on Top of Video -->
+            <div class="container mx-auto flex flex-col lg:flex-row items-center gap-10 py-20 relative z-20">
+                <!-- Text Content -->
+                <div class="lg:w-1/2 text-center lg:text-left">
+                    <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">
+                        Revolutionizing Plant Protein
+                    </h1>
+                    <p class="text-lg text-gray-400 font-light mb-6">
+                        Unlock the power of mushrooms with hydrocolloid magic for enhanced nutrition, taste, and
+                        sustainability.
+                    </p>
+                    <button class="btn rounded-none bg-[#444CFC] text-white border-none font-normal">
+                        Learn More
+                    </button>
+                </div>
+                <!-- Slideshow -->
+                <div class="lg:w-1/2">
+                    <div class="relative w-full rounded-lg overflow-hidden">
+                        <div class="carousel h-80">
+                            <div class="carousel-item w-full">
+                                <img src="assets/image/slide1.jpg" class="w-full object-cover" alt="Slide 1" />
+                            </div>
+                            <div class="carousel-item w-full">
+                                <img src="assets/image/slide2.jpg" class="w-full object-cover" alt="Slide 2" />
+                            </div>
+                            <div class="carousel-item w-full">
+                                <img src="assets/image/slide3.jpg" class="w-full object-cover" alt="Slide 3" />
+                            </div>
+                            <div class="carousel-item w-full">
+                                <img src="assets/image/slide4.jpg" class="w-full object-cover" alt="Slide 4" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+
+        <!-- Story Section -->
+        <section class="py-10 bg-[#ECF8F9]">
+            <div class="max-w-7xl mx-auto flex justify-between items-center py-10 gap-10">
+                <div class="">
+                    <h5 class="font-medium space-x-3 mb-5">OUR STORY</h5>
+                    <h3 class="text-5xl font-semibold mb-5">At MindSpring,
+                        <br>
+                        we are on a mission to revolutionize
+                        <br>
+                        plant-based protein
+                    </h3>
+                    <p>creating a future where nutrition, taste, and sustainability go hand-in-hand. Our journey began
+                        with a simple yet bold idea: enhancing mushrooms' nutritional benefits and flavors using
+                        cutting-edge hydrocolloid technology, making healthy eating both enjoyable and accessible.</p>
+                </div>
+
+                <div class="">
+                    <img src="assets/image/Artboard 1.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Problem and Solution Section -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto">
+                <!-- Section Title -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-[#232536]">Problem & Solution</h2>
+                    <p class="text-lg text-gray-600 mt-4">Addressing critical challenges and delivering groundbreaking
+                        solutions for a healthier future.</p>
+                </div>
+
+                <!-- Problem Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                    <div class="flex flex-col items-center text-center lg:text-left">
+                        <h3 class="text-3xl font-semibold text-[#444CFC] mb-6">The Problems</h3>
+                        <ul class="space-y-6">
+                            <li class="flex items-center gap-4">
+                                <img src="assets/icons/problem-icon1.jpg" alt="Health Risks"
+                                    class="w-16 h-16 rounded-full object-cover">
+                                <p class="text-lg text-gray-600">
+                                    High cholesterol and dietary restrictions make meat consumption a health risk.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <img src="assets/icons/problem-icon2.jpg" alt="Protein Deficiency"
+                                    class="w-16 h-16 rounded-full object-cover">
+                                <p class="text-lg text-gray-600">
+                                    Lack of protein in vegetarian diets leads to nutritional deficiencies.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <img src="assets/icons/problem-icon3.jpg" alt="High Costs"
+                                    class="w-16 h-16 rounded-full object-cover">
+                                <p class="text-lg text-gray-600">
+                                    Plant-based alternatives are often costly and unappealing to young consumers.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <img src="assets/icons/problem_icon4.jpg" alt="Convenience Issues"
+                                    class="w-16 h-16 rounded-full object-cover">
+                                <p class="text-lg text-gray-600">
+                                    Lack of convenient, sustainable, and flavorful food options for busy individuals.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="flex justify-center items-center">
+                        <img src="assets/image/infographofproblem.jpg" alt="Problems Overview"
+                            class="w-full max-w-lg rounded-lg shadow-lg">
+                    </div>
+                </div>
+
+                <!-- Solution Section -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div class="flex justify-center items-center">
+                        <img src="assets/image/infographofsolution.jpg" alt="Solutions Infographic"
+                            class="w-full max-w-lg rounded-lg shadow-lg">
+                    </div>
+                    <div class="flex flex-col items-center text-center lg:text-left">
+                        <h3 class="text-3xl font-semibold text-[#444CFC] mb-6">Our Solution</h3>
+                        <ol class="space-y-6">
+                            <li class="flex items-center gap-4">
+                                <div class="text-4xl font-bold text-[#444CFC]">1</div>
+                                <p class="text-lg text-gray-600">
+                                    Use hydrocolloid technology to enhance mushroom texture and flavor.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div class="text-4xl font-bold text-[#444CFC]">2</div>
+                                <p class="text-lg text-gray-600">
+                                    Conduct extensive research to ensure nutritional value and affordability.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div class="text-4xl font-bold text-[#444CFC]">3</div>
+                                <p class="text-lg text-gray-600">
+                                    Develop a protein-rich product for diverse dietary needs and sustainability.
+                                </p>
+                            </li>
+                            <li class="flex items-center gap-4">
+                                <div class="text-4xl font-bold text-[#444CFC]">4</div>
+                                <p class="text-lg text-gray-600">
+                                    Create a healthy, flavorful, and convenient food solution for Gen Z and
+                                    professionals.
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Section -->
+        <section class="py-20 bg-gray-100">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-semibold text-[#232536] mb-10">Our Products</h2>
+                <p class="text-lg text-gray-600 mb-8">
+                    Discover our innovative range of plant-based protein alternatives, created to redefine the future of
+                    food.
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Product 1 -->
+                    <div class="product-card bg-white p-6 rounded-lg shadow-lg">
+                        <img src="assets/image/product1.jpg" alt="Product 1"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-xl font-semibold text-[#444CFC] mt-4">Mushroom Protein Patty</h3>
+                        <p class="text-gray-600 mt-2">A juicy, flavorful alternative to meat, packed with protein and
+                            made from our hydrocolloid-infused mushrooms.</p>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-card bg-white p-6 rounded-lg shadow-lg">
+                        <img src="assets/image/product2.jpg" alt="Product 2"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-xl font-semibold text-[#444CFC] mt-4">Mushroom Protein Snack Bars</h3>
+                        <p class="text-gray-600 mt-2">Convenient and healthy on-the-go snacks, rich in plant-based
+                            protein, perfect for busy individuals.</p>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-card bg-white p-6 rounded-lg shadow-lg">
+                        <img src="assets/image/product3.jpg" alt="Product 3"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-xl font-semibold text-[#444CFC] mt-4">HydroColloid Mushroom Protein Powder</h3>
+                        <p class="text-gray-600 mt-2">A versatile protein powder that mixes easily into smoothies and
+                            recipes, made with sustainable mushrooms.</p>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-card bg-white p-6 rounded-lg shadow-lg">
+                        <img src="assets/image/product4.jpg" alt="Product 4"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <h3 class="text-xl font-semibold text-[#444CFC] mt-4">Plant-Powered Mushroom Protein Ready Meals
+                        </h3>
+                        <p class="text-gray-600 mt-2">Convenient, ready-to-eat meals featuring mushroom protein,
+                            designed for health-conscious consumers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-semibold text-center text-[#232536] mb-12">Research & Blogs</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Blog 1 -->
+                    <div class="p-6 rounded-lg shadow-lg bg-gradient-to-br from-[#444CFC] to-[#232536]">
+                        <h3 class="text-2xl font-semibold text-white mb-4">What is Hydrocolloid?</h3>
+                        <p class="text-gray-200 mb-4">
+                            Learn about hydrocolloid technology and its role in creating plant-based protein
+                            alternatives.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="research/hydrocolloid.pdf" class="btn bg-white text-[#444CFC] rounded px-4 py-2"
+                                target="_blank">
+                                Download PDF
+                            </a>
+                            <a href="research/hydrocolloid-presentation.pptx"
+                                class="btn bg-white text-[#444CFC] rounded px-4 py-2" target="_blank">
+                                View Presentation
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Blog 2 -->
+                    <div class="p-6 rounded-lg shadow-lg bg-gradient-to-br from-[#3F51B5] to-[#232536]">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Why Milky Mushrooms?</h3>
+                        <p class="text-gray-200 mb-4">
+                            Discover why milky mushrooms are the ideal base for creating plant-based protein
+                            alternatives.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="research/milky-mushrooms.pdf" class="btn bg-white text-[#3F51B5] rounded px-4 py-2"
+                                target="_blank">
+                                Download PDF
+                            </a>
+                            <a href="research/milky-mushrooms-presentation.pptx"
+                                class="btn bg-white text-[#3F51B5] rounded px-4 py-2" target="_blank">
+                                View Presentation
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Blog 3 -->
+                    <div class="p-6 rounded-lg shadow-lg bg-gradient-to-br from-[#FF6F61] to-[#232536]">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Proteins in Mushrooms</h3>
+                        <p class="text-gray-200 mb-4">
+                            A deep dive into the protein content of mushrooms and their benefits for plant-based diets.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="research/mushroom-proteins.pdf"
+                                class="btn bg-white text-[#FF6F61] rounded px-4 py-2" target="_blank">
+                                Download PDF
+                            </a>
+                            <a href="research/mushroom-proteins-presentation.pptx"
+                                class="btn bg-white text-[#FF6F61] rounded px-4 py-2" target="_blank">
+                                View Presentation
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Blog 4 -->
+                    <div class="p-6 rounded-lg shadow-lg bg-gradient-to-br from-[#4CAF50] to-[#232536]">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Lackings in Existing Products</h3>
+                        <p class="text-gray-200 mb-4">
+                            Understand the challenges of current plant-based protein products and how we address them.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="research/existing-products.pdf"
+                                class="btn bg-white text-[#4CAF50] rounded px-4 py-2" target="_blank">
+                                Download PDF
+                            </a>
+                            <a href="research/existing-products-presentation.pptx"
+                                class="btn bg-white text-[#4CAF50] rounded px-4 py-2" target="_blank">
+                                View Presentation
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Blog 5 -->
+                    <div class="p-6 rounded-lg shadow-lg bg-gradient-to-br from-[#FF9800] to-[#232536]">
+                        <h3 class="text-2xl font-semibold text-white mb-4">The Future of Food</h3>
+                        <p class="text-gray-200 mb-4">
+                            Explore the potential of innovative food technologies like hydrocolloids in redefining
+                            diets.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="research/future-of-food.pdf" class="btn bg-white text-[#FF9800] rounded px-4 py-2"
+                                target="_blank">
+                                Download PDF
+                            </a>
+                            <a href="research/future-of-food-presentation.pptx"
+                                class="btn bg-white text-[#FF9800] rounded px-4 py-2" target="_blank">
+                                View Presentation
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Blog 6 -->
+                    <div class="p-6 rounded-lg shadow-lg bg-gradient-to-br from-[#00BCD4] to-[#232536]">
+                        <h3 class="text-2xl font-semibold text-white mb-4">Sustainability with Mushrooms</h3>
+                        <p class="text-gray-200 mb-4">
+                            How mushrooms can serve as a sustainable solution for global protein needs.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="research/mushroom-sustainability.pdf"
+                                class="btn bg-white text-[#00BCD4] rounded px-4 py-2" target="_blank">
+                                Download PDF
+                            </a>
+                            <a href="research/mushroom-sustainability-presentation.pptx"
+                                class="btn bg-white text-[#00BCD4] rounded px-4 py-2" target="_blank">
+                                View Presentation
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Us Section -->
+        <section class="py-20 bg-gray-100">
+            <div class="container mx-auto">
+                <!-- About Mindspring -->
+                <div class="mb-12">
+                    <h2 class="text-4xl font-semibold text-center text-[#232536] mb-8">About Mindspring</h2>
+                    <p class="text-gray-600 text-center text-lg max-w-4xl mx-auto">
+                        Mindspring is an innovative startup dedicated to revolutionizing the way we think about
+                        plant-based protein.
+                        Our mission is to create sustainable, delicious, and nutritious alternatives to animal-based
+                        proteins using cutting-edge technology and eco-conscious practices.
+                        With a focus on hydrocolloid-enhanced mushrooms, we aim to address global challenges like
+                        climate change, dietary health, and food accessibility for the next generation.
+                    </p>
+                </div>
+
+                <!-- Mission, Vision, Values -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mb-16">
+                    <div class="p-6 bg-white rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-[#444CFC] mb-4">Our Mission</h3>
+                        <p class="text-gray-600">
+                            To innovate sustainable and affordable plant-based protein alternatives that are both
+                            healthy and delicious, transforming the way people eat globally.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-[#444CFC] mb-4">Our Vision</h3>
+                        <p class="text-gray-600">
+                            To be pioneers in redefining protein consumption, fostering a sustainable future for both
+                            people and the planet through innovative food solutions.
+                        </p>
+                    </div>
+                    <div class="p-6 bg-white rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-semibold text-[#444CFC] mb-4">Our Values</h3>
+                        <p class="text-gray-600">
+                            Sustainability, innovation, health, inclusivity, and affordability are at the core of
+                            everything we do at Mindspring.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Team Section -->
+                <div>
+                    <h2 class="text-4xl font-semibold text-center text-[#232536] mb-12">Meet Our Team</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <!-- Team Member 1 -->
+                        <div class="text-center">
+                            <img src="assets/image/team-member1.jpg" alt="Abid" class="mx-auto mb-4">
+                            <h3 class="text-xl font-semibold text-[#444CFC]">Mohammad Hossain Abid</h3>
+                            <p class="text-gray-600">Co-founder & Technology Lead</p>
+                        </div>
+                        <!-- Team Member 2 -->
+                        <div class="text-center">
+                            <img src="assets/image/team-member2.jpg" alt="Indian Member" class="mx-auto mb-4">
+                            <h3 class="text-xl font-semibold text-[#444CFC]">Arafat Zaman</h3>
+                            <p class="text-gray-600">Co-Founder & Lead Designer</p>
+                        </div>
+                        <!-- Team Member 3 -->
+                        <div class="text-center">
+                            <img src="assets/image/team-member3.jpg" alt="Team Member 2" class="mx-auto mb-4">
+                            <h3 class="text-xl font-semibold text-[#444CFC]">Aprajita Lohmor</h3>
+                            <p class="text-gray-600">Co-Founder & Chief Communication Officer</p>
+                        </div>
+                        <!-- Team Member 4 -->
+                        <div class="text-center">
+                            <img src="assets/image/team-member4.jpg" alt="Team Member 3" class="mx-auto mb-4">
+                            <h3 class="text-xl font-semibold text-[#444CFC]">Sazzad Hossain</h3>
+                            <p class="text-gray-600">Co-Founder & Research Specialist</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-[#232536] text-white py-12">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+
+            <!-- About Us Section -->
+            <div>
+                <h4 class="text-2xl font-semibold mb-4">About Us</h4>
+                <p class="text-lg">MindSpring is revolutionizing plant-based proteins with innovative technology,
+                    focusing on sustainability, flavor, and nutrition. We aim to make healthy eating more accessible and
+                    convenient for everyone, especially the younger generation.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="text-2xl font-semibold mb-4">Quick Links</h4>
+                <ul>
+                    <li><a href="#home" class="text-lg hover:text-[#444CFC]">Home</a></li>
+                    <li><a href="#about" class="text-lg hover:text-[#444CFC]">About</a></li>
+                    <li><a href="#products" class="text-lg hover:text-[#444CFC]">Products</a></li>
+                    <li><a href="#blog" class="text-lg hover:text-[#444CFC]">Blog</a></li>
+                    <li><a href="#contact" class="text-lg hover:text-[#444CFC]">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Us Section -->
+            <div>
+                <h4 class="text-2xl font-semibold mb-4">Contact Us</h4>
+                <p class="text-lg">Email: info@mindspring.com</p>
+                <p class="text-lg">Phone: +880 123 456 789</p>
+                <div class="flex gap-6 mt-6">
+                    <a href="https://facebook.com" class="text-white hover:text-[#444CFC]" target="_blank"><i
+                            class="fab fa-facebook"></i></a>
+                    <a href="https://twitter.com" class="text-white hover:text-[#444CFC]" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                    <a href="https://linkedin.com" class="text-white hover:text-[#444CFC]" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
+                    <a href="https://instagram.com" class="text-white hover:text-[#444CFC]" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="mt-8 text-center">
+            <p>&copy; 2024 MindSpring. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/functions.js"></script>
+</body>
+
+</html>
