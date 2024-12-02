@@ -11,8 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Font Awesome for social media icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-F
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,13 +38,13 @@ F
                 </div>
                 <div class="">
                     <ul class="flex gap-5 text-white font-light">
-                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Home</a></li>
-                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Story</a></li>
-                        <li><a href="" class="hover:font-medium hover:text-blue-400">Problem & Solution</a></li>
-                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Products</a></li>
-                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Research</a></li>
-                        <li><a href="" class="hover:font-semibold hover:text-blue-400">About Us</a></li>
-                        <li><a href="" class="hover:font-semibold hover:text-blue-400">Contact</a></li>
+                        <li><a href="#home" class="hover:font-semibold hover:text-blue-400">Home</a></li>
+                        <li><a href="#story" class="hover:font-semibold hover:text-blue-400">Story</a></li>
+                        <li><a href="#problem-solution" class="hover:font-medium hover:text-blue-400">Problem & Solution</a></li>
+                        <li><a href="#products" class="hover:font-semibold hover:text-blue-400">Products</a></li>
+                        <li><a href="#research" class="hover:font-semibold hover:text-blue-400">Research</a></li>
+                        <li><a href="#about-us" class="hover:font-semibold hover:text-blue-400">About Us</a></li>
+                        <li><a href="#contact-us" class="hover:font-semibold hover:text-blue-400">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,7 +53,7 @@ F
         <hr class="text-white">
 
         <!-- Banner Section -->
-        <section class="relative">
+        <section class="relative" id="home">
             <!-- Video Background -->
             <video class="absolute inset-0 w-full h-full object-cover z-0" autoplay muted loop>
                 <source src="assets/videos/banner-background.mp4" type="video/mp4">
@@ -64,7 +63,7 @@ F
             <div class="absolute inset-0 bg-black opacity-10 z-10"></div>
 
             <!-- Content on Top of Video -->
-            <div class="container mx-auto flex flex-col lg:flex-row items-center gap-10 py-20 relative z-20">
+            <div class="container max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-10 py-20 relative z-20">
                 <!-- Text Content -->
                 <div class="lg:w-1/2 text-center lg:text-left">
                     <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">
@@ -103,7 +102,7 @@ F
     <main>
 
         <!-- Story Section -->
-        <section class="py-10 bg-[#ECF8F9]">
+        <section id="story" class="py-10 bg-[#ECF8F9]">
             <div class="max-w-7xl mx-auto flex justify-between items-center py-10 gap-10">
                 <div class="">
                     <h5 class="font-medium space-x-3 mb-5">OUR STORY</h5>
@@ -125,8 +124,8 @@ F
         </section>
 
         <!-- Problem and Solution Section -->
-        <section class="py-20 bg-gray-50">
-            <div class="container mx-auto">
+        <section class="py-20 bg-gray-50" id="problem-solution">
+            <div class="container max-w-7xl mx-auto">
                 <!-- Section Title -->
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-bold text-[#232536]">Problem & Solution</h2>
@@ -217,8 +216,8 @@ F
         </section>
 
         <!-- Product Section -->
-        <section class="py-20 bg-gray-100">
-            <div class="container mx-auto text-center">
+        <section class="py-20 bg-gray-100" id="products">
+            <div class="container text-center  max-w-7xl mx-auto">
                 <h2 class="text-4xl font-semibold text-[#232536] mb-10">Our Products</h2>
                 <p class="text-lg text-gray-600 mb-8">
                     Discover our innovative range of plant-based protein alternatives, created to redefine the future of
@@ -266,9 +265,9 @@ F
             </div>
         </section>
 
-
-        <section class="py-20 bg-gray-50">
-            <div class="container mx-auto">
+        <!-- Research Section -->
+        <section class="py-20 bg-gray-50" id="research">
+            <div class="container  max-w-7xl mx-auto">
                 <h2 class="text-4xl font-semibold text-center text-[#232536] mb-12">Research & Blogs</h2>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Blog 1 -->
@@ -382,8 +381,8 @@ F
 
 
         <!-- About Us Section -->
-        <section class="py-20 bg-gray-100">
-            <div class="container mx-auto">
+        <section class="py-20 bg-gray-100" id="about-us">
+            <div class="container max-w-7xl mx-auto">
                 <!-- About Mindspring -->
                 <div class="mb-12">
                     <h2 class="text-4xl font-semibold text-center text-[#232536] mb-8">About Mindspring</h2>
@@ -458,8 +457,8 @@ F
     </main>
 
     <!-- Footer Section -->
-    <footer class="bg-[#232536] text-white py-12">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+    <footer class="bg-[#232536] text-white py-12" id="contact-us">
+        <div class="container max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
 
             <!-- About Us Section -->
             <div>
