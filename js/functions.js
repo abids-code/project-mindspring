@@ -1,4 +1,3 @@
-
 // Auto-slideshow functionality
 const carousel = document.querySelector('.carousel');
 let index = 0;
@@ -10,3 +9,16 @@ setInterval(() => {
     });
     index = (index + 1) % items.length; // Loop through the slides
 }, 3000); // Change slide every 3 seconds
+
+// Play/Pause functionality for video
+const video = document.querySelector('video');
+video.addEventListener('click', () => {
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+});
+
+const video2 = document.getElementById('ai-bg');
+video2.playbackRate = 0.5;

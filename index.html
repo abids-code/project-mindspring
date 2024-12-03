@@ -24,6 +24,11 @@
         .poppins {
             font-family: "Poppins", serif;
         }
+
+        .carousel-item {
+            transition: transform 0.5s ease-in-out;
+        }
+        
     </style>
 
 
@@ -40,7 +45,8 @@
                     <ul class="flex gap-5 text-white font-light">
                         <li><a href="#home" class="hover:font-semibold hover:text-blue-400">Home</a></li>
                         <li><a href="#story" class="hover:font-semibold hover:text-blue-400">Story</a></li>
-                        <li><a href="#problem-solution" class="hover:font-medium hover:text-blue-400">Problem & Solution</a></li>
+                        <li><a href="#problem-solution" class="hover:font-medium hover:text-blue-400">Problem &
+                                Solution</a></li>
                         <li><a href="#products" class="hover:font-semibold hover:text-blue-400">Products</a></li>
                         <li><a href="#research" class="hover:font-semibold hover:text-blue-400">Research</a></li>
                         <li><a href="#about-us" class="hover:font-semibold hover:text-blue-400">About Us</a></li>
@@ -98,6 +104,40 @@
                 </div>
             </div>
         </section>
+
+        <!-- AI Section -->
+        <section class="relative py-20 bg-gradient-to-r from-[#232536] via-[#2c2f3f] to-[#232536]">
+            <div class="container mx-auto text-center relative z-20 px-6">
+                <h2 class="text-4xl font-bold text-white mb-6">AI Recipe Generator</h2>
+                <p class="text-lg text-gray-200 mb-12">Generate personalized recipes based on your selected product and available ingredients.</p>
+        
+                <div class="flex justify-between items-start space-x-8">
+                    <div class="w-1/2 bg-gradient-to-t from-blue-600 to-indigo-700 p-8 rounded-lg shadow-xl">
+                        <h3 class="text-2xl text-white font-semibold mb-4">Select Product & Enter Ingredients</h3>
+                        <form id="ai-form" class="space-y-4">
+                            <select id="product" class="w-full px-4 py-3 rounded-lg text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                                <option value="" disabled selected>Select Your Product</option>
+                                <option value="Mushroom Protein Patty">Mushroom Protein Patty</option>
+                                <option value="Mushroom Protein Snack Bars">Mushroom Protein Snack Bars</option>
+                                <option value="HydroColloid Mushroom Protein Powder">HydroColloid Mushroom Protein Powder</option>
+                                <option value="Plant-Powered Mushroom Protein Ready Meals">Plant-Powered Mushroom Protein Ready Meals</option>
+                            </select>
+        
+                            <input type="text" id="ingredients" name="ingredients" placeholder="Enter regular ingredients (comma separated)" class="w-full px-4 py-3 rounded-lg text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300">
+        
+                            <button type="submit" class="w-full bg-yellow-500 text-white py-3 rounded-lg font-semibold hover:bg-yellow-600">Generate Recipe</button>
+                        </form>
+                    </div>
+        
+                    <div id="ai-output" class="w-1/2 bg-gradient-to-t from-purple-600 to-blue-700 p-8 rounded-lg shadow-xl backdrop-blur-xl">
+                        <h4 class="text-xl text-white font-semibold mb-4">Generated Recipe:</h4>
+                        <p id="recipe-text" class="text-lg text-left text-white">Your AI-generated recipe will appear here.</p>
+                        <div id="loading-indicator" class="hidden">Loading...</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </header>
     <main>
 
@@ -435,7 +475,7 @@
                         <div class="text-center">
                             <img src="assets/image/team-member2.jpg" alt="Indian Member" class="mx-auto mb-4">
                             <h3 class="text-xl font-semibold text-[#232536]">Arafat Zaman</h3>
-                            <p class="text-gray-600">Co-Founder & Lead Designer</p>
+                            <p class="text-gray-600">Co-Founder & Data Analysist</p>
                         </div>
                         <!-- Team Member 3 -->
                         <div class="text-center">
@@ -506,6 +546,7 @@
     </footer>
 
     <script src="js/functions.js"></script>
+    <script src="js/recipeGenerator.js"></script>
 </body>
 
 </html>
