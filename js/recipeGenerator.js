@@ -1,3 +1,52 @@
+const edibleIngredients = [
+    // Vegetables
+    "tomato", "potato", "carrot", "onion", "garlic", "bell pepper", "broccoli", "cauliflower",
+    "spinach", "kale", "lettuce", "zucchini", "cucumber", "celery", "mushroom", "pumpkin",
+    "eggplant", "sweet potato", "radish", "beet", "cabbage", "peas", "corn", "chili pepper",
+    "asparagus", "leek", "ginger", "parsley", "dill", "basil",
+
+    // Fruits
+    "apple", "banana", "orange", "lemon", "lime", "grape", "watermelon", "strawberry",
+    "blueberry", "raspberry", "mango", "pineapple", "peach", "plum", "pear", "kiwi",
+    "pomegranate", "avocado", "cherry", "grapefruit", "coconut", "papaya", "apricot",
+    "fig", "passion fruit", "dragon fruit", "guava", "melon", "blackberry", "cranberry",
+
+    // Grains and Legumes
+    "rice", "wheat", "quinoa", "oats", "barley", "millet", "buckwheat", "cornmeal",
+    "lentils", "chickpeas", "kidney beans", "black beans", "pinto beans", "peas",
+    "soybeans", "tofu", "tempeh",
+
+    // Dairy and Alternatives
+    "milk", "cheese", "yogurt", "butter", "cream", "ghee", "almond milk", "soy milk",
+    "oat milk", "coconut milk",
+
+    // Meat and Seafood
+    "chicken", "beef", "pork", "lamb", "duck", "turkey", "fish", "salmon", "tuna",
+    "shrimp", "crab", "lobster", "mussels", "clams", "scallops",
+
+    // Nuts and Seeds
+    "almond", "walnut", "cashew", "pecan", "pistachio", "hazelnut", "peanut",
+    "chia seeds", "flaxseeds", "sunflower seeds", "pumpkin seeds", "sesame seeds",
+
+    // Sweeteners
+    "sugar", "honey", "maple syrup", "agave syrup", "molasses", "stevia",
+
+    // Oils and Fats
+    "olive oil", "coconut oil", "vegetable oil", "sunflower oil", "sesame oil",
+    "canola oil", "peanut oil", "avocado oil", "butter", "margarine",
+
+    // Herbs and Spices
+    "salt", "pepper", "paprika", "turmeric", "cinnamon", "nutmeg", "cumin", 
+    "coriander", "oregano", "thyme", "rosemary", "sage", "chili powder", 
+    "cayenne", "clove", "cardamom", "vanilla",
+
+    // Other
+    "flour", "baking powder", "baking soda", "vinegar", "soy sauce", "sriracha",
+    "mustard", "ketchup", "mayonnaise", "chocolate", "cocoa powder", "coffee",
+    "tea", "noodles", "pasta", "bread", "crackers", "jam", "jelly", "peanut butter"
+];
+
+
 // Event Listener for Form Submission
 document.getElementById('ai-form').addEventListener('submit', function(e) {
     e.preventDefault();
@@ -6,40 +55,44 @@ document.getElementById('ai-form').addEventListener('submit', function(e) {
     const selectedProduct = document.getElementById('product').value;
     const ingredients = document.getElementById('ingredients').value.trim();
 
-    if (selectedProduct && ingredients) {
-        const recipeText = generateAdvancedRecipe(selectedProduct, ingredients);
-        // Display the generated recipe in the output box
-        document.getElementById('recipe-text').innerText = recipeText;
-    } else {
-        document.getElementById('recipe-text').innerText = "Please select a product and enter ingredients.";
+    if (!selectedProduct || !ingredients) {
+        document.getElementById('recipe-text').innerHTML = "Please select a product and enter ingredients.";
+        return;
     }
+
+    // Validate Ingredients
+    const ingredientsArray = ingredients.split(',').map(item => item.trim().toLowerCase());
+    const invalidIngredients = ingredientsArray.filter(item => !edibleIngredients.includes(item));
+
+    if (invalidIngredients.length > 0) {
+        document.getElementById('recipe-text').innerHTML = `
+            <p class="text-red-500">Error: The following ingredients are not recognized as edible: 
+            ${invalidIngredients.join(', ')}</p>`;
+        return;
+    }
+
+    // Generate Recipe
+    const recipeText = generateAdvancedRecipe(selectedProduct, ingredientsArray);
+    document.getElementById('recipe-text').innerHTML = '';  // Clear previous content
+    typeWriter(recipeText, 0);  // Type the new recipe
 });
 
 // Function to Generate an Advanced Recipe
 function generateAdvancedRecipe(product, ingredients) {
-    // Split the user-entered ingredients into an array
-    const ingredientsArray = ingredients.split(',').map(item => item.trim());
-    let recipe = '';
-
     switch (product) {
         case 'Mushroom Protein Patty':
-            recipe = generateMushroomProteinPattyRecipe(ingredientsArray);
-            break;
+            return generateMushroomProteinPattyRecipe(ingredients);
         case 'Mushroom Protein Snack Bars':
-            recipe = generateMushroomProteinSnackBarsRecipe(ingredientsArray);
-            break;
+            return generateMushroomProteinSnackBarsRecipe(ingredients);
         case 'HydroColloid Mushroom Protein Powder':
-            recipe = generateProteinPowderRecipe(ingredientsArray);
-            break;
+            return generateProteinPowderRecipe(ingredients);
         case 'Plant-Powered Mushroom Protein Ready Meals':
-            recipe = generateReadyMealsRecipe(ingredientsArray);
-            break;
+            return generateReadyMealsRecipe(ingredients);
         default:
-            recipe = 'Product not found. Please try again.';
+            return 'Product not found. Please try again.';
     }
-
-    return recipe;
 }
+
 
 // Recipe Generator for Mushroom Protein Patty
 function generateMushroomProteinPattyRecipe(ingredients) {
