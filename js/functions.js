@@ -1,3 +1,16 @@
+// JavaScript to handle mobile menu toggle
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+
+    menuToggle.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+        menu.classList.toggle("flex"); // Make sure it displays flex when shown
+    });
+});
+
+
+
 // Auto-slideshow functionality
 const carousel = document.querySelector('.carousel');
 let index = 0;
