@@ -78,6 +78,8 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        
     </style>
 
 
@@ -91,20 +93,22 @@
                 <div class="navbar-start">
                     <a class="text-xl font-extrabold text-white">MindSpring</a>
                 </div>
-        
+
                 <!-- Hamburger Menu Icon (Visible on Mobile) -->
                 <button id="menu-toggle" class="text-white md:hidden focus:outline-none">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
-        
+
                 <!-- Navbar Links -->
                 <div id="menu" class="hidden md:block">
                     <ul class="flex flex-col md:flex-row gap-4 md:gap-5 text-white font-light">
                         <li><a href="#home" class="hover:font-semibold hover:text-blue-400">Home</a></li>
                         <li><a href="#story" class="hover:font-semibold hover:text-blue-400">Story</a></li>
-                        <li><a href="#problem-solution" class="hover:font-medium hover:text-blue-400">Problem & Solution</a></li>
+                        <li><a href="#problem-solution" class="hover:font-medium hover:text-blue-400">Problem &
+                                Solution</a></li>
                         <li><a href="#products" class="hover:font-semibold hover:text-blue-400">Products</a></li>
                         <li><a href="#research" class="hover:font-semibold hover:text-blue-400">Research</a></li>
                         <li><a href="#about-us" class="hover:font-semibold hover:text-blue-400">About Us</a></li>
@@ -113,7 +117,7 @@
                 </div>
             </div>
         </nav>
-        
+
 
         <hr class="text-white">
 
@@ -169,14 +173,14 @@
 
         <!-- AI -->
         <section id="mindspring-ai"
-            class="relative min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white p-10 flex flex-col items-center justify-center">
+            class="relative min-h-max bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white p-40 flex flex-col items-center justify-center">
             <!-- Animated Background -->
             <div class="absolute inset-0 z-0 overflow-hidden">
                 <canvas id="ai-animation"></canvas>
             </div>
 
             <!-- AI Section Content -->
-            <div class="relative z-10 max-w-3xl text-center">
+            <div class="relative z-10 max-w-4xl text-center backdrop-blur-xl p-10">
                 <!-- Section Heading -->
                 <h1 class="text-5xl font-extrabold mb-4 animate-fade-in">
                     MindSpring AI
@@ -198,10 +202,17 @@
                         <img src="assets/image/product3.jpg" alt="Snack Bar" class="w-5 h-5" /> Suggest: Snack Bars
                     </button>
                 </div>
+                <h1 class="text-4xl font-extrabold mb-4 animate-fade-in">
+                    How MindSpring AI works MindSpring AI?
+                </h1>
+                <p class="text-base font-light mb-8 animate-fade-in delay-100">
+                    Pick a product, enter ingredients, and get recipes instantly!
+                </p>
+
 
 
                 <!-- Recipe Output -->
-                <div id="recipe-output" class="mb-12 text-left hidden">
+                <div id="recipe-output" class="mb-12 text-left hidden backdrop-blur-lg">
                     <h2 class="text-2xl font-bold mb-2">Your Recipe</h2>
                     <div id="recipe-text" class="text-gray-300"></div>
                 </div>
@@ -229,6 +240,7 @@
                     class="px-6 py-3 bg-green-500 hover:bg-green-600 rounded-full text-white font-semibold transition duration-200">
                     Generate
                 </button>
+
             </form>
         </section>
 
@@ -236,8 +248,7 @@
 
         <!-- Story Section -->
         <section id="story" class="py-10 bg-[#ECF8F9]">
-            <div
-                class="max-w-7xl mx-5 md:mx-auto flex flex-col lg:flex-row justify-between items-center py-10 gap-10">
+            <div class="max-w-7xl mx-5 md:mx-auto flex flex-col lg:flex-row justify-between items-center py-10 gap-10">
                 <div id="story-text" class="opacity-0 transform translate-y-10 transition-all duration-1000 ease-out">
                     <h5 class="font-medium space-x-3 mb-5">OUR STORY</h5>
                     <h3 class="text-5xl font-semibold mb-5">At MindSpring,
@@ -283,10 +294,11 @@
                             <div
                                 class="bg-white shadow-lg rounded-xl p-6 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl group">
                                 <div class="flex items-center gap-6">
-                                    <img src="assets/icons/problem-icon1.jpg" alt="Health Risks"
-                                        class="w-20 h-20 rounded-full object-cover shadow-md group-hover:rotate-6 transition-transform">
+                                    <div
+                                        class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-500">
+                                        1</div>
                                     <p class="text-lg text-gray-700">
-                                        High cholesterol and dietary restrictions make meat consumption a health risk.
+                                        Livestock farming contributes to emissions, deforestation, and water overuse.
                                     </p>
                                 </div>
                             </div>
@@ -294,10 +306,11 @@
                             <div
                                 class="bg-white shadow-lg rounded-xl p-6 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl group">
                                 <div class="flex items-center gap-6">
-                                    <img src="assets/icons/problem-icon2.jpg" alt="Protein Deficiency"
-                                        class="w-20 h-20 rounded-full object-cover shadow-md group-hover:rotate-6 transition-transform">
+                                    <div
+                                        class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-500">
+                                        2</div>
                                     <p class="text-lg text-gray-700">
-                                        Lack of protein in vegetarian diets leads to nutritional deficiencies.
+                                        Animal proteins are linked to health risks like high cholesterol.
                                     </p>
                                 </div>
                             </div>
@@ -305,10 +318,11 @@
                             <div
                                 class="bg-white shadow-lg rounded-xl p-6 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl group">
                                 <div class="flex items-center gap-6">
-                                    <img src="assets/icons/problem-icon3.jpg" alt="High Costs"
-                                        class="w-20 h-20 rounded-full object-cover shadow-md group-hover:rotate-6 transition-transform">
+                                    <div
+                                        class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-500">
+                                        3</div>
                                     <p class="text-lg text-gray-700">
-                                        Plant-based alternatives are often costly and unappealing to young consumers.
+                                        Plant-based proteins lack texture, flavor, and affordability, limiting adoption.
                                     </p>
                                 </div>
                             </div>
@@ -316,11 +330,33 @@
                             <div
                                 class="bg-white shadow-lg rounded-xl p-6 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl group">
                                 <div class="flex items-center gap-6">
-                                    <img src="assets/icons/problem_icon4.jpg" alt="Convenience Issues"
-                                        class="w-20 h-20 rounded-full object-cover shadow-md group-hover:rotate-6 transition-transform">
+                                    <div
+                                        class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-500">
+                                        4</div>
                                     <p class="text-lg text-gray-700">
-                                        Lack of convenient, sustainable, and flavorful food options for busy
-                                        individuals.
+                                        Traditional protein sources are becoming scarce and expensive.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white shadow-lg rounded-xl p-6 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl group">
+                                <div class="flex items-center gap-6">
+                                    <div
+                                        class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-500">
+                                        5</div>
+                                    <p class="text-lg text-gray-700">
+                                        Gen-Z and busy individuals prioritize convenience over healthy eating.
+                                    </p>
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white shadow-lg rounded-xl p-6 transform transition-all duration-500 hover:scale-105 hover:shadow-2xl group">
+                                <div class="flex items-center gap-6">
+                                    <div
+                                        class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-teal-500">
+                                        6</div>
+                                    <p class="text-lg text-gray-700">
+                                        Many vegetarians struggle to meet their protein needs due to limited options.
                                     </p>
                                 </div>
                             </div>
